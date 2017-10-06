@@ -1,7 +1,10 @@
-function greeter(person: string) {
-    return "Hello, " + person;
-}
 
-var user = "asfasf";
+import * as PIXI from 'pixi.js';
 
-document.body.innerHTML = greeter(user);
+document.addEventListener('DOMContentLoaded', () => {
+    let renderer = PIXI.autoDetectRenderer(600, 400,
+        {
+            antialias: true, transparent: false, resolution: 1, backgroundColor: 0xFFFFFF
+        }
+    );
+});
