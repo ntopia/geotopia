@@ -4,11 +4,12 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "typescript",
-            "tsconfig": "tsconfig.json",
-            "problemMatcher": [
-                "$tsc"
-            ],
+            "taskName": "webpack build",
+            "type": "process",
+            "command": "${workspaceRoot}/node_modules/.bin/webpack",
+            "windows": {
+                "command": "${workspaceRoot}/node_modules/.bin/webpack.cmd"
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true

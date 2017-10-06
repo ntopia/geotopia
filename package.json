@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "devDependencies": {
     "ts-loader": "^2.3.7",
-    "typescript": "^2.5.3"
+    "typescript": "^2.5.3",
+    "webpack": "^3.6.0"
   }
 }
