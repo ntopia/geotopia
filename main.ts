@@ -1,7 +1,21 @@
 import * as PIXI from 'pixi.js';
 
+function setupGrid(parent: PIXI.Container) {
+    let grid = new PIXI.Graphics();
+    grid.lineStyle(1, 0x555555, 1);
+    grid.moveTo(-50, 50);
+    grid.lineTo(900, 50);
+    grid.moveTo(-50, 100);
+    grid.lineTo(900, 100);
+
+    parent.addChild(grid);
+}
+
 function setupApp(app: PIXI.Application) {
-    let objectStage = new PIXI.Container();    
+    let objectStage = new PIXI.Container();
+
+    setupGrid(objectStage);
+
     let line = new PIXI.Graphics();
     line.lineStyle(3, 0, 1);
     line.moveTo(1, 1);
