@@ -2,10 +2,10 @@
   "name": "geotopia",
   "version": "0.0.1",
   "devDependencies": {
-    "@types/pixi.js": "^4.5.6",
-    "pixi.js": "^4.5.6",
-    "ts-loader": "^2.3.7",
-    "typescript": "^2.5.3",
-    "webpack": "^3.6.0"
+    "@types/pixi.js": "^4.6.0",
+    "pixi.js": "^4.6.1",
+    "ts-loader": "^3.1.1",
+    "typescript": "^2.6.1",
+    "webpack": "^3.8.1"
   }
 }
